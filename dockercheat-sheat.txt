@@ -1,0 +1,18 @@
+//list container in Docker 
+	docker image ls 
+//run a contaner with our image (// -d = --detach ; -p = --publish ) 
+	docker container run -dp 8080:80 docker/welcome-to-docker 
+//check container logs 
+	docker container logs [first 3 letter of the container]
+//check container logs (but live) by adding -f in our command 
+	docker container -f logs [first 3 letter of the container] 
+//stop a container 
+	docker container stop [first 3 letter of the container] 
+//list stopped container in Docker
+	docker container ls -a 
+//remove a container 
+	docker remove [first 3 letter of the container]
+//build a docker image  
+	docker build -t lucasluc/welcome-to-docker:v1 . 
+
+										
