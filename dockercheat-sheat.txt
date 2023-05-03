@@ -19,3 +19,5 @@
 //after delete the gsd:first-str locally we will run it on docker hub via port 8000 	
 	docker container run -d --name web -p 8000:8080 \
 	sangco/gsd:first-ctr
+//creates and runs a new Docker container based on the Alpine Linux image with the name "test"
+	docker container run -it --name test alpine sh
