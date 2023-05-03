@@ -13,6 +13,6 @@
 //remove a container 
 	docker remove [first 3 letter of the container]
 //build a docker image  
-	docker build -t lucasluc/welcome-to-docker:v1 . 
-
-										
+	docker build -t sangco/welcome-to-docker:v1 . 
+//push a container to docker hub
+	docker image push sangco/welcome-to-docker:v1 							
