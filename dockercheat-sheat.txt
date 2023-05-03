@@ -16,3 +16,6 @@
 	docker build -t sangco/welcome-to-docker:v1 . 
 //push a container to docker hub
 	docker image push sangco/welcome-to-docker:v1 							
+//after delete the gsd:first-str locally we will run it on docker hub via port 8000 	
+	docker container run -d --name web -p 8000:8080 \
+	sangco/gsd:first-ctr
