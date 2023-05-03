@@ -21,3 +21,7 @@
 	sangco/gsd:first-ctr
 //creates and runs a new Docker container based on the Alpine Linux image with the name "test"
 	docker container run -it --name test alpine sh
+*To exit use CTR+P+Q 
+*Container will got terminated unless we run cmd to remove it 
+//Terminate it 
+	docker container rm test -f 
